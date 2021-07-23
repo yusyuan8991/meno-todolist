@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+i {
+  pointer-events: none;
+}
+
+body {
+  background-image: url("../photo/1.jpeg");
+}
+
+body main {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main header {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
+}
+
+body main header div.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main header div.nav h1 {
+  color: #4c4c7e;
+  font-size: 5rem;
+}
+
+body main header div.nav img {
+  height: 12vh;
+  width: 6vw;
+  margin: 1.5rem 0.25rem;
+}
+
+body main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body main form input,
+body main form button {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.25rem;
+  margin: 0.5rem;
+}
+
+body main form input[type="number"] {
+  width: 100px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -moz-appearance: textfield;
+}
+
+body main form input::-webkit-outer-spin-button,
+body main form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body main form input[type="text"] {
+  width: 300px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body main form button {
+  cursor: point;
+  background-color: #304e61;
+  border-radius: 5%;
+  color: white;
+}
+
+body main div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 1rem;
+}
+
+body main div.sort button {
+  cursor: pointer;
+  border-radius: 5%;
+  font-size: 1.25rem;
+  background-color: #70649a;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem;
+}
+
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section div.todo {
+  background-color: #cab5b5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30vw;
+  margin: 0.5rem 0rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body section div.todo p {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0.5rem 1rem;
+}
+
+body section div.todo p.text {
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section div.todo p.time {
+  width: 30%;
+  text-align: center;
+}
+
+body section div.todo button {
+  padding: 0.5rem 0rem;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+body section div.todo button.finish {
+  background-color: #60a060;
+  opacity: 0.8;
+  width: 15%;
+}
+
+body section div.todo button.trash {
+  background-color: #e68282;
+  opacity: 0.8;
+  width: 15%;
+}
+
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.3rem;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body main header nav div.nav img {
+    width: 12vw;
+    height: 10vh;
+  }
+  body main header nav div.nav h1 {
+    font-size: 3.5rem;
+  }
+  body form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+   <header>
+      <nav>
+        <div class="nav">
+          <img src="./photo/icon-pencil.png" alt="" />
+          <h1>To do list</h1>
+        </div>
+      </nav>
+    </header>
+    <form>
+      <input type="text" required />
+      <input type="number" min="1" max="12" placeholder="Mon" required />
+      <input type="number" min="1" max="31" placeholder="day" required />
+      <button>加入行程</button>
+    </form>
+
+    <div class="sort">
+      <button>照順序排列</button>
+    </div>
+
+    <section></section>
+  </body>
+    </main>
+ 
+  <script src="./app.js"></script>
+</html>
